@@ -1,5 +1,5 @@
 import { ADD_ITEM } from "../constants/demo";
-import { IActionType, IDemoState } from "../types/demo";
+import { IDemoState } from "../types/demo";
 
 const initialState: IDemoState = {
   list: ["Java", "JS", "React"]

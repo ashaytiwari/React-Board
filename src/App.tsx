@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
-import "./App.scss";
 import { useAppDispatch, useAppSelector } from "./redux/hooks/hooks";
 import { addItems } from "./redux/actions/demo.actions";
+import BoardPage from "./pages/BoardPage/BoardPage";
 
 function App() {
   const dispatch = useAppDispatch();
@@ -17,13 +16,14 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <input
+    <div>
+      <BoardPage />
+      {/* <input
         type="text"
         value={item}
         onChange={(e) => setItem(e.target.value)}
       />
-      <button onClick={addHandler}>Add</button>
+      <button onClick={addHandler}>Add</button> */}
     </div>
   );
 }
